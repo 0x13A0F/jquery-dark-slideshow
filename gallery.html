@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Dark Slideshow</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fullscreen-container hidden">
+        <div class='fullscreen-div'>
+            <img class="remove-fullscreen" src="icons/remove_icon.webp" width="60" />
+        </div>
+    </div>
+
+    <div id="gallery">
+
+        <div id="slide">
+            <div class="counter"></div>
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+            <img class="toggleDiapo" src="icons/pause_diapo.png" width="40" />
+            <img class="fullscreen" src="icons/fullscreen.png" width="30" />
+            <img id='preview' />
+        </div>
+
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div id="thumbnails">
+            <div class="wrapper">
+                <img src="images/wall1.jpeg" class="thumbnail" alt="Mountains">
+                <img src="images/wall2.jpeg" class="thumbnail" alt="Desert">
+                <img src="images/wall3.jpeg" class="thumbnail" alt="Castle">
+                <img src="images/wall4.jpeg" class="thumbnail" alt="Snow Mountains">
+                <img src="images/wall5.jpeg" class="thumbnail" alt="High Mountains">
+                <img src="images/wall6.jpeg" class="thumbnail" alt="Night">
+                <img src="images/wall7.jpeg" class="thumbnail" alt="House">
+                <img src="images/wall8.jpeg" class="thumbnail" alt="Nature">
+                <img src="images/wall9.jpeg" class="thumbnail" alt="Red Leafs">
+                <img src="images/wall10.jpeg" class="thumbnail" alt="Pink Cherry Blossom">
+            </div>
+        </div>
+
+        <script src="js/slider.js"></script>
+        <script>
+
+            // $('.wrapper').addImage('wall1.jpeg', 'TEST');
+            // $('.wrapper').addImage('wall2.jpeg', 'TEST');
+            // $('.wrapper').addImage('wall3.jpeg', 'TEST');
+
+        </script>
+
+</body>
+
+</html>

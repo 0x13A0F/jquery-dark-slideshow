@@ -1,0 +1,182 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #222;
+}
+
+#thumbnails {
+    white-space: nowrap;
+    height: 20%;
+    width: 100%;
+    ;
+}
+
+.wrapper {
+    position: relative;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.wrapper {
+    -ms-overflow-style: none;
+}
+
+#slide {
+    position: relative;
+    overflow: hidden;
+}
+
+#preview {
+    width: 100%;
+    height: 700px;
+    object-fit: fill;
+}
+
+.thumbnail {
+    width: 170px;
+    height: 140px;
+    opacity: 0.5;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+#gallery {
+    width: 60%;
+    margin: auto;
+    padding: auto;
+    ;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #01579b66;
+    padding: 2px 8px;
+    color: white;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.toggleDiapo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    font-size: 30px;
+    color: goldenrod;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+
+}
+
+.fullscreen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover,
+.toggleDiapo:hover,
+.fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.counter {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2%;
+    height: 6.8%;
+    top: 1.2%;
+    left: 0.9%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(212, 207, 207);
+    color: white;
+    font: 1.5em Arial, sans-serif;
+}
+
+.fullscreen-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen-div {
+    width: 70%;
+    height: 85%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.counter,
+.fullscreen,
+.prev,
+.next,
+.toggleDiapo {
+    z-index: 5;
+}
+
+.remove-fullscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.remove-fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
